@@ -20,7 +20,7 @@ function signUp() {
 
     const promise = auth.createUserWithEmailAndPassword(email.value, password.value);
     promise.catch(e => alert(e.message));
-    firebase.database().ref("users").child(user.uid).set(username);
+    firebase.database().ref("users").child(user.uid).set(username.value);
 
     alert("Signed Up");
 }
@@ -59,4 +59,3 @@ function homepage() {
         alert("Please Sign In");
     }
 }
-
