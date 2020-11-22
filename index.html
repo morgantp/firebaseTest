@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Firebase</title>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-auth.js"></script>
+        <script src="/js/script.js"></script>
+
+        <h1>Sign In Test</h1>
+        <div id="header"></div>
+        
+        <input type="email" placeholder="Enter Email" id="email">
+        <input type="password" placeholder="Enter Password" id="password">
+        <input type="text" placeholder="Enter Username" id="username">
+            
+        <button onclick="signUp()" id="signUp">Sign Up</button>
+        <button onclick="signIn()" id="signIn">Sign In</button>
+        <button onclick="signOut()" id="signOut">Sign Out</button>
+        <button onclick="homepage()">Homepage</button>
+    </body>
+</html>
